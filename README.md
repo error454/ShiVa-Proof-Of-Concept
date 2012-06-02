@@ -7,3 +7,8 @@ Box Particle Lighting
 This demo is meant to test particle interaction with colliders along with a moving dynamic light source.  The project is a simple set of planes, set as colliders that form a fully enclosed cube.  In that cube is a helper object with a point-light source, a particle system and a dynamics controller.
 
 Every frame, a random impulse is added to the dynamics controller of the helper.
+
+License
+=========
+MIT
+
