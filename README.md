@@ -8,6 +8,10 @@ This demo is meant to test particle interaction with colliders along with a movi
 
 Every frame, a random impulse is added to the dynamics controller of the helper.
 
+Netwon's Cradle
+---------------
+This is an attempt at making a Newton's Cradle device using the dynamics system.  It is a simple example of using ball joints but it doesn't quite function like the real world counterpart.  If you know why please let me know or throw me a pull request.
+
 License
 =========
 MIT
