@@ -44,4 +44,4 @@ MIT (See LICENSE file)
 [4]: https://dl.dropbox.com/u/7079101/shiva/boxParticleLighting.html
 [5]: https://dl.dropbox.com/u/7079101/shiva/newtonsCradle.html
 [6]: https://dl.dropbox.com/u/7079101/shiva/jumpMan.html
-[7]: https://github.com/error454/ShiVa-Proof-Of-Concept/tree/master/GameShell/flowchart.jpg
+[7]: https://github.com/error454/ShiVa-Proof-Of-Concept/blob/master/GameShell/flowchart.jpg
