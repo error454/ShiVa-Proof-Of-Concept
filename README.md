@@ -24,7 +24,7 @@ A 2D platformer that uses the ShiVa dynamics system for jump physics.  Also incl
 Game Shell
 ----------
 A small game shell that can be used as the basis to start writing a game.  This shell includes a basic implementation of various game screens as follows:
-[Example Image][7]
+![Flowchart][7]
 
 The red portion is typically game-specific and so is not implemented.
 
