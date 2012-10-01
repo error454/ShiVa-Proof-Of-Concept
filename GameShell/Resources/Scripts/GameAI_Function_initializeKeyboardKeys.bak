@@ -1,0 +1,35 @@
+--------------------------------------------------------------------------------
+--  Function......... : initializeKeyboardKeys
+--  Author........... : 
+--  Description...... : 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+function GameAI.initializeKeyboardKeys ( )
+--------------------------------------------------------------------------------
+	
+	hashtable.add ( this.htKeys ( ), "w", false )
+    hashtable.add ( this.htKeys ( ), "a", false )
+    hashtable.add ( this.htKeys ( ), "s", false )
+    hashtable.add ( this.htKeys ( ), "d", false )
+    hashtable.add ( this.htKeys ( ), "space", false )
+    hashtable.add ( this.htKeys ( ), "c", false )
+    hashtable.add ( this.htKeys ( ), "shift", false)
+    hashtable.add ( this.htKeys ( ), "x", false)
+    hashtable.add ( this.htKeys ( ), "up", false)
+    hashtable.add ( this.htKeys ( ), "down", false)
+    hashtable.add ( this.htKeys ( ), "left", false)
+    hashtable.add ( this.htKeys ( ), "right", false)
+    hashtable.add ( this.htKeys ( ), "space", false)
+    hashtable.add ( this.htKeys ( ), "esc", false)
+    hashtable.add ( this.htKeys ( ), "tab", false)
+    hashtable.add ( this.htKeys ( ), "control", false)
+    hashtable.add ( this.htKeys ( ), "RT", false ) --right trigger
+    hashtable.add ( this.htKeys ( ), "LT", false )  --left trigger
+    hashtable.add ( this.htKeys ( ), "start", false )
+    hashtable.add ( this.htKeys ( ), "LA", false ) --left analog
+    hashtable.add ( this.htKeys ( ), "RA", false ) --right analog
+	
+--------------------------------------------------------------------------------
+end
+--------------------------------------------------------------------------------
