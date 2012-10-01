@@ -24,11 +24,12 @@ A 2D platformer that uses the ShiVa dynamics system for jump physics.  Also incl
 Game Shell
 ----------
 A small game shell that can be used as the basis to start writing a game.  This shell includes a basic implementation of various game screens as follows:
-![Flowchart][7]
+[![Flowchart][7]]
 
 The red portion is typically game-specific and so is not implemented.
 
 Keyboard and joystick handling is also built in with the ability to get a latched key state or raw key state.  The primary design goal here was to allow handling key input in each user AI state rather than checking state in the keyboard and joystick handlers.  For instance in the Game onLoop function:
+
     if(this.getKeyLatched ( 0, "esc", true ) or this.getKeyLatched ( 0, "start", true))
     then    
         this.Pause ( )
@@ -44,4 +45,4 @@ MIT (See LICENSE file)
 [4]: https://dl.dropbox.com/u/7079101/shiva/boxParticleLighting.html
 [5]: https://dl.dropbox.com/u/7079101/shiva/newtonsCradle.html
 [6]: https://dl.dropbox.com/u/7079101/shiva/jumpMan.html
-[7]: https://github.com/error454/ShiVa-Proof-Of-Concept/blob/master/GameShell/flowchart.jpg
+[7]: https://github.com/error454/ShiVa-Proof-Of-Concept/tree/master/GameShell/flowchart.jpg
