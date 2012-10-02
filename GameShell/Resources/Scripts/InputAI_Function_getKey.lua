@@ -1,14 +1,26 @@
 --------------------------------------------------------------------------------
---  Handler.......... : onJoypadMove
+--  Function......... : getKey
 --  Author........... : 
---  Description...... : 
+--  Description...... : Get a key from the hashtable
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
-function GameAI.onJoypadMove ( nJoypad, nPart, nAxisX, nAxisY, nAxisZ )
+function InputAI.getKey ( nPlayer, sKey )
 --------------------------------------------------------------------------------
 	
-	log.message ( "Pad: " .. nJoypad .. " part: " .. nPart .. " x: " .. nAxisX .. " y: " .. nAxisY .. " z: " .. nAxisZ  )
+	local ht
+    
+    if(nPlayer == 0)
+    then
+        ht = this.htPlayer1Keys ( )
+    elseif(nPlayer == 1)
+    then
+        ht = this.htPlayer2Keys ( )
+    end
+    
+	local result = hashtable.get ( ht, sKey )
+    
+    return result
 	
 --------------------------------------------------------------------------------
 end

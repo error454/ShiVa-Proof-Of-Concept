@@ -1,15 +1,22 @@
 --------------------------------------------------------------------------------
---  Handler.......... : onStartGame
+--  Handler.......... : onGetKeyLatched
 --  Author........... : 
 --  Description...... : 
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
-function GameAI.onStartGame (  )
+function InputAI.onGetKeyLatched ( nPlayer, sKey, bState, bBooleanReturnType )
 --------------------------------------------------------------------------------
 	
-	this.Game ( )
+    --Get the requested key and store it in the specified result object
+	local vResult = this.getKeyLatched ( nPlayer, sKey, bState )
 	
+    if(bBooleanReturnType)
+    then    
+        this.bResult ( vResult )
+    else
+        this.nResult ( vResult )
+	end
 --------------------------------------------------------------------------------
 end
 --------------------------------------------------------------------------------

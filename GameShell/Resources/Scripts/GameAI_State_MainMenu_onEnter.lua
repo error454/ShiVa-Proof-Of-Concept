@@ -8,8 +8,15 @@
 function GameAI.MainMenu_onEnter ( )
 --------------------------------------------------------------------------------
 	
+    --Unload any game scene
+    application.setCurrentUserScene ( "" )
+    
+    --Create menu
 	hud.newTemplateInstance ( this.getUser ( ), "MainMenu", "menu" )
-	
+    
+    --Set game started to false
+	this.bGameStarted ( false )
+    
 --------------------------------------------------------------------------------
 end
 --------------------------------------------------------------------------------

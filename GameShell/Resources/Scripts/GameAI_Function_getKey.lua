@@ -1,26 +1,19 @@
 --------------------------------------------------------------------------------
 --  Function......... : getKey
 --  Author........... : 
---  Description...... : 
+--  Description...... : Get the state of a given key
+--                      nPlayer - the player number (starts from 0)
+--                      sKey - the key to look up
+--                      bBooleanReturnType - true if the return type you are expecting is a boolean, false otherwise.
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
-function GameAI.getKey ( nPlayer, sKey )
+function GameAI.getKey ( nPlayer, sKey, bBooleanReturnType )
 --------------------------------------------------------------------------------
-	local ht
-    
-    if(nPlayer == 0)
-    then
-        ht = this.htPlayer1Keys ( )
-    elseif(nPlayer == 1)
-    then
-        ht = this.htPlayer2Keys ( )
-    end
-    
-	local result = hashtable.get ( ht, sKey )
-    
-    return result
 	
+    user.sendEventImmediate ( this.getUser ( ), "InputAI", "onGetKey", nPlayer, sKey, bBooleanReturnType )
+    return this.getInputAIReturnValue ( bBooleanReturnType )
+    
 --------------------------------------------------------------------------------
 end
 --------------------------------------------------------------------------------

@@ -1,16 +1,15 @@
 --------------------------------------------------------------------------------
---  Handler.......... : onResumeGame
+--  Function......... : setKey
 --  Author........... : 
---  Description...... : 
+--  Description...... : A helper for adding keys to player1 hash table - used for
+--                      keyboard input which is assumed always comes from player 1
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
-function GameAI.onResumeGame (  )
+function InputAI.setKey ( sKey, bState )
 --------------------------------------------------------------------------------
 	
-	--
-	-- Write your code here, using 'this' as current AI instance.
-	--
+	hashtable.set ( this.htPlayer1Keys ( ), sKey, bState )
 	
 --------------------------------------------------------------------------------
 end

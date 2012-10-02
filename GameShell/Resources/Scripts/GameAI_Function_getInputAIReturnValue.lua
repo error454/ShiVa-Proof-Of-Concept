@@ -1,21 +1,23 @@
 --------------------------------------------------------------------------------
---  State............ : Game
+--  Function......... : getInputAIReturnValue
 --  Author........... : 
 --  Description...... : 
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
-function GameAI.Game_onEnter ( )
+function GameAI.getInputAIReturnValue ( bBooleanReturnType )
 --------------------------------------------------------------------------------
 	
-	hud.newTemplateInstance ( this.getUser ( ), "Player", "playerHUD" )
-    
-    if(not this.bGameStarted ( ))
+	--This is where things get kind of ugly and we have to break object encapsulation. 
+    --sendEventImmediate doesn't return a value, so we call the event and then grab 
+    --the value directly from the InputAI, hence the purpose of bBooleanReturnType.
+    if(bBooleanReturnType)
     then
-        this.initializeGame ( )
-        this.bGameStarted ( true )
+        return user.getAIVariable ( this.getUser ( ), "InputAI", "bResult" )
+    else
+        return user.getAIVariable ( this.getUser ( ), "InputAI", "nResult" )
     end
-    	
+	
 --------------------------------------------------------------------------------
 end
 --------------------------------------------------------------------------------

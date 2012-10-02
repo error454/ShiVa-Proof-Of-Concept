@@ -1,16 +1,15 @@
 --------------------------------------------------------------------------------
---  Handler.......... : onHPauseGame
+--  Function......... : initializeInput
 --  Author........... : 
---  Description...... : 
+--  Description...... : Setup the hashtables to store keys for player 1/2
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
-function GameAI.onHPauseGame (  )
+function InputAI.initializeInput ( )
 --------------------------------------------------------------------------------
 	
-	--
-	-- Write your code here, using 'this' as current AI instance.
-	--
+	this.initPlayerInput ( this.htPlayer1Keys ( ) )
+    this.initPlayerInput ( this.htPlayer2Keys ( ) )
 	
 --------------------------------------------------------------------------------
 end

@@ -1,16 +1,15 @@
 --------------------------------------------------------------------------------
---  Handler.......... : onQuitGame
+--  Function......... : initializeGame
 --  Author........... : 
 --  Description...... : 
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
-function GameAI.onQuitGame (  )
+function GameAI.initializeGame ( )
 --------------------------------------------------------------------------------
 	
-	--
-	-- Write your code here, using 'this' as current AI instance.
-	--
+	--Important initialization stuff goes here like
+    --application.setCurrentUserScene ( "someScene" )
 	
 --------------------------------------------------------------------------------
 end
