@@ -7,10 +7,7 @@
 --------------------------------------------------------------------------------
 function InputAI.initPlayerInput ( hash )
 --------------------------------------------------------------------------------
-	--If you need to add new keys to be recognized, for keyboard you need to add here
-    --as well as the onKeyboardKey* handlers.  For joystick, add below as well as the 
-    --onJoypadButton* handlers.
-    
+	
 	--Keyboard keys
 	hashtable.add ( hash, "w", false )
     hashtable.add ( hash, "a", false )

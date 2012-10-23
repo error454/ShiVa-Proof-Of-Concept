@@ -8,16 +8,7 @@
 function InputAI.onJoypadButtonUp ( nJoypad, nButton )
 --------------------------------------------------------------------------------
 	
-	local hash
-    if(nJoypad == 0)
-    then
-        hash = this.htPlayer1Keys ( )
-        hashtable.copy ( this.htPlayer1LastKeys ( ), this.htPlayer1Keys ( ) )
-    elseif(nJoypad == 1)
-    then
-        hash = this.htPlayer2Keys ( )
-        hashtable.copy ( this.htPlayer2LastKeys ( ), this.htPlayer2Keys ( ) )
-    end
+	local hash = this.backupAndGetPlayerKeys ( nJoypad )
     
     if    (nButton == 0)  then hashtable.set ( hash, "joyA", false ) 
     elseif(nButton == 1)  then hashtable.set ( hash, "joyB", false )

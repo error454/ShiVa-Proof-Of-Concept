@@ -1,25 +1,26 @@
 --------------------------------------------------------------------------------
---  Handler.......... : onJoypadStickMove
+--  Function......... : backupAndGetPlayerKeys
 --  Author........... : 
 --  Description...... : 
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
-function InputAI.onJoypadStickMove ( nJoypad, nStick, nAxisX, nAxisY )
+function InputAI.backupAndGetPlayerKeys ( nJoypad )
 --------------------------------------------------------------------------------
 	
-	local hash = this.backupAndGetPlayerKeys ( nJoypad )
-    
-    if(nStick == 0)
+	local hash
+    if(nJoypad == 0)
     then
-        hashtable.set ( hash, "leftAX", nAxisX )
-        hashtable.set ( hash, "leftAY", nAxisY )
-    elseif(nStick == 1)
+        hash = this.htPlayer1Keys ( )
+        hashtable.copy ( this.htPlayer1LastKeys ( ), this.htPlayer1Keys ( ) )
+    elseif(nJoypad == 1)
     then
-        hashtable.set ( hash, "rightAX", nAxisX )
-        hashtable.set ( hash, "rightAY", nAxisY )
+        hash = this.htPlayer2Keys ( )
+        hashtable.copy ( this.htPlayer2LastKeys ( ), this.htPlayer2Keys ( ) )
     end
 	
+    return hash
+    
 --------------------------------------------------------------------------------
 end
 --------------------------------------------------------------------------------
