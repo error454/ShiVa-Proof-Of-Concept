@@ -29,7 +29,15 @@ A small game shell that can be used as the basis to start writing a game.  This 
 
 The red portion is typically game-specific and so is not implemented.
 
-Keyboard and joystick handling is also built in with the ability to get a latched key state or raw key state.  The joystick key mappings are specific to the Xbox 360 controller for the PC.  The primary design goal here was to allow handling key input in each user AI state rather than checking state in the keyboard and joystick handlers.  For instance in the Game onLoop function, the following is used to detect player 0 pressing the escape key or start button:
+Keyboard and joystick handling is also built in with the ability to get a latched key state or raw key state.  
+
+###Raw key state 
+Means that you get the state of the last keys that were pressed.  
+
+###Latched keystate 
+Means that you get a single True/False value back the first time the key enters a state of your choice but false for all subsequent times.  So if you latch on the down key and the user presses down, the function will return True.  If the user continues to hold the down key, it will return false until they let go of the key and press it again.
+
+The joystick key mappings are specific to the Xbox 360 controller for the PC.  The primary design goal here was to allow handling key input in each user AI state rather than checking state in the keyboard and joystick handlers.  For instance in the Game onLoop function, the following is used to detect player 0 pressing the escape key or start button:
 
     if(this.getKeyLatched ( 0, "esc", true ) or this.getKeyLatched ( 0, "start", true))
     then    
