@@ -7,7 +7,7 @@ Note that you can run a demo of all of these projects by clicking the image belo
 Poly Rain
 ---------
 A prototype rain effect using polygons.  Not terrible, but not spectacular.  Needs better surface calculations for placing splash sprites.
-[![Poly Rain][7]]
+![Poly Rain][7]
 
 Box Particle Lighting
 ---------------------
