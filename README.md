@@ -7,7 +7,7 @@ Note that you can run a demo of all of these projects by clicking the image belo
 Poly Rain
 ---------
 A prototype rain effect using polygons.  Not terrible, but not spectacular.  Needs better surface calculations for placing splash sprites.
-![Poly Rain][7]
+[![Poly Rain][7]][8]
 
 Box Particle Lighting
 ---------------------
@@ -62,3 +62,4 @@ MIT (See LICENSE file)
 [5]: https://dl.dropbox.com/u/7079101/shiva/newtonsCradle.html
 [6]: https://dl.dropbox.com/u/7079101/shiva/jumpMan.html
 [7]: https://dl.dropboxusercontent.com/u/7079101/forum%20photos/rain.JPG
+[8]: https://dl.dropboxusercontent.com/u/7079101/shiva/rain.html
