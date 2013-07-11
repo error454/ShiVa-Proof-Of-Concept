@@ -1,0 +1,12 @@
+Build/*
+Models/Thumbnails
+Scenes/Thumbnails
+Resources/Materials/Thumbnails/*
+Resources/Textures/Thumbnails/*
+Resources/Meshes/Thumbnails/*
+Saves/*
+*.bak
+Project.cfg
+*.ccz
+Plugins/*
+Cache/*

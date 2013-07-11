@@ -4,6 +4,11 @@ This repository is organized such that each folder is a fully contained micro-pr
 
 Note that you can run a demo of all of these projects by clicking the image below which will take you to a browser-based ShiVa player with the demo.
 
+Poly Rain
+---------
+A prototype rain effect using polygons.  Not terrible, but not spectacular.  Needs better surface calculations for placing splash sprites.
+[![Poly Rain][7]]
+
 Box Particle Lighting
 ---------------------
 This demo is meant to test particle interaction with colliders along with a moving dynamic light source.  The project is a simple set of planes, set as colliders that form a fully enclosed cube.  In that cube is a helper object with a point-light source, a particle system and a dynamics controller.
@@ -56,3 +61,4 @@ MIT (See LICENSE file)
 [4]: https://dl.dropbox.com/u/7079101/shiva/boxParticleLighting.html
 [5]: https://dl.dropbox.com/u/7079101/shiva/newtonsCradle.html
 [6]: https://dl.dropbox.com/u/7079101/shiva/jumpMan.html
+[7]: https://dl.dropboxusercontent.com/u/7079101/forum%20photos/rain.JPG
