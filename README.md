@@ -4,6 +4,10 @@ This repository is organized such that each folder is a fully contained micro-pr
 
 Note that you can run a demo of all of these projects by clicking the image below which will take you to a browser-based ShiVa player with the demo.
 
+HUD Interpolators
+-----------------
+A simple demo that displays all of the HUD interpolator types. [![Interpolate][9]][10]
+
 Poly Rain
 ---------
 A prototype rain effect using polygons.  Not terrible, but not spectacular.  Needs better surface calculations for placing splash sprites.
@@ -23,7 +27,7 @@ This is an attempt at making a Newton's Cradle device using the dynamics system.
 
 Jump Man
 --------
-A 2D platformer that uses the ShiVa dynamics system for jump physics.  Also includes moving platforms (with limited success) and in-game tweakable physics parameters.
+A 2D platformer that uses the ShiVa dynamics system for jump physics.  Also includes moving platforms (with limited success) and in-game tweakable physics parameters.  In retrospect, a very good example of how NOT to do platformers.
 [![Example Image][3]][6]
 
 Game Shell
@@ -63,3 +67,5 @@ MIT (See LICENSE file)
 [6]: https://dl.dropbox.com/u/7079101/shiva/jumpMan.html
 [7]: https://dl.dropboxusercontent.com/u/7079101/forum%20photos/rain.JPG
 [8]: https://dl.dropboxusercontent.com/u/7079101/shiva/rain.html
+[9]: http://www.error454.com/shiva/hudinterpolate.jpg
+[10]: http://www.error454.com/2013/10/19/shiva3d-hud-interpolators-test/
