@@ -66,7 +66,7 @@ function HudInterpolation.hudInit ( )
             hud.pushActionCommandArgument ( hAction, hashtable.getAt ( this.htInterpolators ( ), i ) )
             hud.pushActionCommandRuntimeArgument ( hAction, hud.kRuntimeValueCallArgument0 )
         hud.endActionCommand ( hAction )
-	end
+    end
     
 --------------------------------------------------------------------------------
 end
