@@ -4,6 +4,10 @@ This repository is organized such that each folder is a fully contained micro-pr
 
 Note that you can run a demo of all of these projects by clicking the image below which will take you to a browser-based ShiVa player with the demo.
 
+STK Pack Loading Example
+------------------------
+An example of how to load external STK files. Accompanying [blog article](http://www.error454.com/2014/05/14/using-stk-packs/).
+
 HUD Interpolators
 -----------------
 A simple demo that displays all of the HUD interpolator types. [![Interpolate][9]][10]
