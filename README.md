@@ -6,7 +6,7 @@ Note that you can run a demo of all of these projects by clicking the image belo
 
 STK Pack Loading Example
 ------------------------
-An example of how to load external STK files. Accompanying [blog article](http://www.error454.com/2014/05/14/using-stk-packs/).
+An example of how to load external STK files. Accompanying [blog article](http://error454.com/2014/05/14/using-stk-packs-in-shiva/).
 
 HUD Interpolators
 -----------------
@@ -71,5 +71,5 @@ MIT (See LICENSE file)
 [6]: https://dl.dropbox.com/u/7079101/shiva/jumpMan.html
 [7]: https://dl.dropboxusercontent.com/u/7079101/forum%20photos/rain.JPG
 [8]: https://dl.dropboxusercontent.com/u/7079101/shiva/rain.html
-[9]: http://www.error454.com/shiva/hudinterpolate.jpg
+[9]: http://www.error454.com/2013/10/hudinterpolate.jpg
 [10]: http://www.error454.com/2013/10/19/shiva3d-hud-interpolators-test/
