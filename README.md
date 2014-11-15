@@ -2,7 +2,70 @@ ShiVa Proof Of Concept Projects
 ===============================
 This repository is organized such that each folder is a fully contained micro-project.  To look at any given project, you will want to check-out this repository and then add the project folder of interest to ShiVa from Main->Projects.
 
-Note that you can run a demo of all of these projects by clicking the image below which will take you to a browser-based ShiVa player with the demo.
+## hello-space-invaders ##
+<img src='http://www.error454.com/assets/uploads/2014/11/hellospace.jpg' alt='Space Invaders'>
+
+There are 2 game projects in here, **lander** and **space**. 
+
+### lander ###
+lander does basically nothing and I'm not sure what I was thinking when I made it. 2 player space invaders?
+
+### space ###
+space is a pretty standard start to space invaders. You can move left/right and shoot but the enemies have no AI.
+
+## FortunousWheel ##
+<img src='http://www.error454.com/assets/uploads/2014/11/fortune.jpg' alt='The Fortunous Wheel'>
+
+At one point, the wife and I were doing a motivational chore thing and at the end of the week we would get a prize if we did all of our chores. I made this project so that we could have a Wheel of Fortune style prize picker. So we'd spin the wheel and pull out a numbered piece of paper from a jar telling us what we'd won!
+
+I was really proud of this project because the code to generate the wheel was kind of ridiculous. I do remember the biggest drawback was that the wheel took a TON of draw calls. But the wife had just gotten the HTC One and that thing just handled it so I shrugged and called it good.
+
+## Platformer Physics ##
+<img src='http://www.error454.com/assets/uploads/2014/11/platformer.jpg' alt='Platformer Physics'>
+
+A familiar face for a familiar problem. Jumping physics, early jump termination and stuff.
+
+## shiva-pong ##
+<img src='http://www.error454.com/assets/uploads/2014/11/pong.jpg' alt='Pong'>
+
+An incomplete pong implementation. Paddle moves, ball moves but the physics need work. Spacebar launches ball, mouse moves paddle.
+
+## random ##
+<img src='http://www.error454.com/assets/uploads/2014/11/random.jpg' alt='Random vs Gaussian'>
+
+This project was made to try and visualize the distribution of gaussian random numbers vs random numbers. Try changing the initial state from Gaussian to Random to see for yourself.
+
+## flocking ##
+<img src='http://www.error454.com/assets/uploads/2014/11/notflocking.jpg' alt='A steering behavior demo'>
+
+This may have had visions of glory to be a flocking simulator but it ended up just being a steering implementation. Move the mouse around and the box follows it.
+
+## simplex ##
+<img src='http://www.error454.com/assets/uploads/2014/11/cottoncandy.jpg' alt='A simplex noise generator'>
+
+This is a shiva plugin and project. The plugin is a simplex noise generator and the project uses it to make random nebulas. The nebulas are rendered to a rendermap and in the `makeRandomNebula` case they are saved to D:\nebula. There was a stretch of time where I was letting this run overnight and I'd come back to a bunch of nebulas in the morning.
+
+I even saved some of my favorite generation parameters to make the nebulas Cotton Candy and Purple Thunder :) We used this at one point to make backdrops for Rage Runner.
+ 
+## letterRender ##
+<img src='http://www.error454.com/assets/uploads/2014/11/letterrender.jpg' alt='A 3d space letter generator'>
+
+Hmmm, I can't really say what my motivation behind this was. I think I was inspired by the Wii news browser because they rendered each letter individually and had them animate onto the page. I wanted to try something similar.
+
+## spatialization ##
+<img src='http://www.error454.com/assets/uploads/2014/11/spatialization.jpg' alt='A sound spatialization test'>
+
+A simple test with dials for sound spatialization. This also contains code for what I call DebugHUD which is a quick way of getting dials on the screen to tweak AIs.
+
+## HorseTest ##
+<img src='http://www.error454.com/assets/uploads/2014/11/horsetest.jpg' alt='Horse Test'>
+
+The original goal of this project was to see if I could take a free unity asset and import it into Shiva. The answer was yes. The next question was how difficult it was to manually modify the horse skeletal system to improve the horse turning animation.
+
+Things got progressively worse as I started playing with a day/night system and then gave up. The horse controller is pretty solid and I'm happy with that small piece of work.
+
+## lua-performance ##
+I like for equations to make sense when you read them in code. In most cases, I prioritize readability over imaginary performance. Someone made the comment that dividing is really slow in LUA and I didn't believe them. So I wrote this small test to try and benchmark multiplication and table pre-allocation.
 
 STK Pack Loading Example
 ------------------------
