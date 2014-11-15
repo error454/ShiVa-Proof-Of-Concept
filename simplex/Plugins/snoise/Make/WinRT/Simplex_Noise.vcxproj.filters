@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+	<Filter Include="Sources\XB360">
+		<UniqueIdentifier>{90f2e6e9-056b-4277-956b--2147475442}</UniqueIdentifier>
+	</Filter>
+	<Filter Include="Sources\XB360">
+		<UniqueIdentifier>{90f2e6e9-056b-4277-956b--2147475443}</UniqueIdentifier>
+	</Filter>
+	<Filter Include="Sources\Windows">
+		<UniqueIdentifier>{90f2e6e9-056b-4277-956b--2147475444}</UniqueIdentifier>
+	</Filter>
+	<Filter Include="Sources\Windows">
+		<UniqueIdentifier>{90f2e6e9-056b-4277-956b--2147475445}</UniqueIdentifier>
+	</Filter>
+	<Filter Include="Sources\Windows">
+		<UniqueIdentifier>{90f2e6e9-056b-4277-956b--2147475446}</UniqueIdentifier>
+	</Filter>
+	<Filter Include="Sources\Wii">
+		<UniqueIdentifier>{90f2e6e9-056b-4277-956b--2147475447}</UniqueIdentifier>
+	</Filter>
+	<Filter Include="Sources\PS3">
+		<UniqueIdentifier>{90f2e6e9-056b-4277-956b--2147475448}</UniqueIdentifier>
+	</Filter>
+	<Filter Include="Sources\Palm">
+		<UniqueIdentifier>{90f2e6e9-056b-4277-956b--2147475449}</UniqueIdentifier>
+	</Filter>
+	<Filter Include="Sources\NaCl">
+		<UniqueIdentifier>{90f2e6e9-056b-4277-956b--2147475450}</UniqueIdentifier>
+	</Filter>
+	<Filter Include="Sources\Mac">
+		<UniqueIdentifier>{90f2e6e9-056b-4277-956b--2147475451}</UniqueIdentifier>
+	</Filter>
+	<Filter Include="Sources\Linux">
+		<UniqueIdentifier>{90f2e6e9-056b-4277-956b--2147475452}</UniqueIdentifier>
+	</Filter>
+	<Filter Include="Sources\iOS">
+		<UniqueIdentifier>{90f2e6e9-056b-4277-956b--2147475453}</UniqueIdentifier>
+	</Filter>
+	<Filter Include="Sources\BlackBerry">
+		<UniqueIdentifier>{90f2e6e9-056b-4277-956b--2147475454}</UniqueIdentifier>
+	</Filter>
+	<Filter Include="Sources\Android">
+		<UniqueIdentifier>{90f2e6e9-056b-4277-956b--2147475455}</UniqueIdentifier>
+	</Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="S3DX">
+      <UniqueIdentifier>{0000f721-503d-458e-8fd0-6a4db87595c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{bb0bcb6f-f6cd-4348-a7e9-c2e29cd50b2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\WinRT">
+      <UniqueIdentifier>{7e59df26-e619-4583-8886-349eff2bf4b6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAIConstant.h">
+      <Filter>S3DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAIEngineAPI.h">
+      <Filter>S3DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAIFunction.h">
+      <Filter>S3DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAIModel.h">
+      <Filter>S3DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAIPackage.h">
+      <Filter>S3DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAIVariable.h">
+      <Filter>S3DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAIVariables.h">
+      <Filter>S3DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAudioBackend.h">
+      <Filter>S3DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\S3DX\S3DXConfig.h">
+      <Filter>S3DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\S3DX\S3DXMacros.h">
+      <Filter>S3DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\S3DX\S3DXPlatform.h">
+      <Filter>S3DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\S3DX\S3DXPlugin.h">
+      <Filter>S3DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\S3DX\S3DXTypes.h">
+      <Filter>S3DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Android\PrecompiledHeader.h">
+		<Filter>Sources\Android</Filter>
+	</ClInclude>
+<ClInclude Include="..\..\Sources\BlackBerry\PrecompiledHeader.h">
+		<Filter>Sources\BlackBerry</Filter>
+	</ClInclude>
+<ClInclude Include="..\..\Sources\iOS\PrecompiledHeader.h">
+		<Filter>Sources\iOS</Filter>
+	</ClInclude>
+<ClInclude Include="..\..\Sources\Linux\PrecompiledHeader.h">
+		<Filter>Sources\Linux</Filter>
+	</ClInclude>
+<ClInclude Include="..\..\Sources\Mac\PrecompiledHeader.h">
+		<Filter>Sources\Mac</Filter>
+	</ClInclude>
+<ClInclude Include="..\..\Sources\NaCl\PrecompiledHeader.h">
+		<Filter>Sources\NaCl</Filter>
+	</ClInclude>
+<ClInclude Include="..\..\Sources\noise.h">
+		<Filter>Sources</Filter>
+	</ClInclude>
+<ClInclude Include="..\..\Sources\Palm\PrecompiledHeader.h">
+		<Filter>Sources\Palm</Filter>
+	</ClInclude>
+<ClInclude Include="..\..\Sources\PS3\PrecompiledHeader.h">
+		<Filter>Sources\PS3</Filter>
+	</ClInclude>
+<ClInclude Include="..\..\Sources\simplexnoise.h">
+		<Filter>Sources</Filter>
+	</ClInclude>
+<ClInclude Include="..\..\Sources\Wii\PrecompiledHeader.h">
+		<Filter>Sources\Wii</Filter>
+	</ClInclude>
+<ClInclude Include="..\..\Sources\Windows\PrecompiledHeader.h">
+		<Filter>Sources\Windows</Filter>
+	</ClInclude>
+<ClInclude Include="..\..\Sources\XB360\PrecompiledHeader.h">
+		<Filter>Sources\XB360</Filter>
+	</ClInclude>
+<ClInclude Include="..\..\Sources\Plugin.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\WinRT\PrecompiledHeader.h">
+      <Filter>Sources\WinRT</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Sources\noise.cpp">
+		<Filter>Sources</Filter>
+	</ClCompile>
+	<ClCompile Include="..\..\Sources\simplexnoise.cpp">
+		<Filter>Sources</Filter>
+	</ClCompile>
+	<ClCompile Include="..\..\Sources\Windows\DLLMain.cpp">
+		<Filter>Sources\Windows</Filter>
+	</ClCompile>
+	<ClCompile Include="..\..\Sources\Windows\PrecompiledHeader.cpp">
+		<Filter>Sources\Windows</Filter>
+	</ClCompile>
+	<ClCompile Include="..\..\Sources\XB360\PrecompiledHeader.cpp">
+		<Filter>Sources\XB360</Filter>
+	</ClCompile>
+	<ClCompile Include="..\..\Sources\Plugin.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\WinRT\PrecompiledHeader.cpp">
+      <Filter>Sources\WinRT</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

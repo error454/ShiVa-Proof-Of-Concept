@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+	<plugin name="Simplex_Noise" version="0.1" s3dx_sdk_version="0x1090200">
+
+		<info>
+			<description>Simplex Noise Generation</description>
+			<author>
+				<name>Zachary Burke</name>
+				<mail>zachary.burke@gmail.com</mail>
+				<site>http://www.hypercanestudios.com</site>
+			</author>
+		</info>
+
+		<certificate></certificate>
+
+		<files>
+			<platform type="Windows">
+				<arch type="x86_32">Simplex_Noise_Windows.dll</arch>
+			</platform>
+
+			<platform type="WinRT">
+				<arch type="x86_32">Simplex_Noise_WinRT_x86_32.dll</arch>
+				<arch type="x86_64">Simplex_Noise_WinRT_x86_64.dll</arch>
+				<arch type="arm_32">Simplex_Noise_WinRT_arm_32.dll</arch>
+			</platform>
+
+			<platform type="WinRT" toolset="wp8">
+				<arch type="x86_32">Simplex_Noise_WinRT_wp8_x86_32.dll</arch>
+				<arch type="arm_32">Simplex_Noise_WinRT_wp8_arm_32.dll</arch>
+			</platform>
+
+			<platform type="Mac">
+				<arch type="ppc_32">Simplex_Noise_Mac.dylib</arch>
+				<arch type="ppc_64">Simplex_Noise_Mac.dylib</arch>
+				<arch type="x86_32">Simplex_Noise_Mac.dylib</arch>
+				<arch type="x86_64">Simplex_Noise_Mac.dylib</arch>
+			</platform>
+
+			<platform type="Linux">
+				<arch type="x86_32">Simplex_Noise_Linux.so</arch>
+			</platform>
+
+			<platform type="iOS">
+				<arch type="arm_v6">Simplex_Noise_iOS.a</arch>
+				<arch type="arm_v7">Simplex_Noise_iOS.a</arch>
+			</platform>
+
+			<platform type="Android">
+				<arch type="arm_v5te">Simplex_Noise_Android.a</arch>
+			</platform>
+
+			<platform type="Palm">
+				<arch type="arm_v6">Simplex_Noise_Palm.a</arch>
+			</platform>
+
+			<platform type="BlackBerry">
+				<arch type="arm_v7">Simplex_Noise_BlackBerry.a</arch>
+			</platform>
+
+			<platform type="Flash">
+				<arch type="noarch">Simplex_Noise_Flash.swc</arch>
+			</platform>
+
+			<platform type="Wii">
+				<arch type="ppc_32">Simplex_Noise_Wii.a</arch>
+			</platform>
+
+			<platform type="PS3">
+				<arch type="ppc_32">Simplex_Noise_PS3.a</arch>
+			</platform>
+
+			<platform type="NaCl">
+				<arch type="x86_32">Simplex_Noise_NaCl_x86_32.a</arch>
+				<arch type="x86_64">Simplex_Noise_NaCl_x86_64.a</arch>
+			</platform>
+
+			<platform type="XB360">
+				<arch type="ppc_32">Simplex_Noise_XB360.lib</arch>
+			</platform>
+
+		</files>
+	</plugin>
+</manifest>

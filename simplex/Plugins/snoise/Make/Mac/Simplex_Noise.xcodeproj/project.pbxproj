@@ -1,0 +1,262 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		800000010E9AC9E700239362 /* noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 800010010E9AC9E700239362 /* noise.cpp */; };
+		720E47531251383000BC6A74 /* Plugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 720E474F1251383000BC6A74 /* Plugin.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		800010020E9AC9E700239362 /* noise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = noise.h; path = ../../Sources/noise.h; sourceTree = SOURCE_ROOT; };
+		800010010E9AC9E700239362 /* noise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = noise.cpp; path = ../../Sources/noise.cpp; sourceTree = SOURCE_ROOT; };
+		720E474F1251383000BC6A74 /* Plugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Plugin.cpp; path = ../../Sources/Plugin.cpp; sourceTree = SOURCE_ROOT; };
+		720E47501251383000BC6A74 /* Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plugin.h; path = ../../Sources/Plugin.h; sourceTree = SOURCE_ROOT; };
+		720E47561251384E00BC6A74 /* PrecompiledHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrecompiledHeader.h; path = ../../Sources/Mac/PrecompiledHeader.h; sourceTree = SOURCE_ROOT; };
+		720E478612513AEB00BC6A74 /* S3DXAIPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S3DXAIPackage.h; path = ../../Sources/S3DX/S3DXAIPackage.h; sourceTree = SOURCE_ROOT; };
+		720E478712513AEB00BC6A74 /* S3DXAIEngineAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S3DXAIEngineAPI.h; path = ../../Sources/S3DX/S3DXAIEngineAPI.h; sourceTree = SOURCE_ROOT; };
+		720E478812513AEB00BC6A74 /* S3DXPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S3DXPlatform.h; path = ../../Sources/S3DX/S3DXPlatform.h; sourceTree = SOURCE_ROOT; };
+		720E478912513AEB00BC6A74 /* S3DXMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S3DXMacros.h; path = ../../Sources/S3DX/S3DXMacros.h; sourceTree = SOURCE_ROOT; };
+		720E478A12513AEB00BC6A74 /* S3DXPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S3DXPlugin.h; path = ../../Sources/S3DX/S3DXPlugin.h; sourceTree = SOURCE_ROOT; };
+		720E478B12513AEB00BC6A74 /* S3DXAIVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S3DXAIVariable.h; path = ../../Sources/S3DX/S3DXAIVariable.h; sourceTree = SOURCE_ROOT; };
+		720E478C12513AEB00BC6A74 /* S3DXConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S3DXConfig.h; path = ../../Sources/S3DX/S3DXConfig.h; sourceTree = SOURCE_ROOT; };
+		720E478D12513AEB00BC6A74 /* S3DXAIVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S3DXAIVariables.h; path = ../../Sources/S3DX/S3DXAIVariables.h; sourceTree = SOURCE_ROOT; };
+		720E478E12513AEB00BC6A74 /* S3DXAIConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S3DXAIConstant.h; path = ../../Sources/S3DX/S3DXAIConstant.h; sourceTree = SOURCE_ROOT; };
+		720E478F12513AEB00BC6A74 /* S3DXAIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S3DXAIModel.h; path = ../../Sources/S3DX/S3DXAIModel.h; sourceTree = SOURCE_ROOT; };
+		720E479012513AEB00BC6A74 /* S3DXAIFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S3DXAIFunction.h; path = ../../Sources/S3DX/S3DXAIFunction.h; sourceTree = SOURCE_ROOT; };
+		720E479112513AEB00BC6A74 /* S3DXTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S3DXTypes.h; path = ../../Sources/S3DX/S3DXTypes.h; sourceTree = SOURCE_ROOT; };
+		D2AAC09D05546B4700DB518D /* Simplex_Noise_Mac.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Simplex_Noise_Mac.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC09B05546B4700DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DDFF38A45A11DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC09D05546B4700DB518D /* Simplex_Noise_Mac.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Simplex_Noise */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ACFE841707C02AAC07 /* Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DDFF38A45A11DB9C8B /* Products */,
+			);
+			name = Simplex_Noise;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77ACFE841707C02AAC07 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				800010020E9AC9E700239362 /* noise.h */,
+				800010010E9AC9E700239362 /* noise.cpp */,
+				720E47491251380E00BC6A74 /* Mac */,
+				720E478512513ACE00BC6A74 /* S3DX */,
+				720E47501251383000BC6A74 /* Plugin.h */,
+				720E474F1251383000BC6A74 /* Plugin.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		720E47491251380E00BC6A74 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				720E47561251384E00BC6A74 /* PrecompiledHeader.h */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		720E478512513ACE00BC6A74 /* S3DX */ = {
+			isa = PBXGroup;
+			children = (
+				720E478612513AEB00BC6A74 /* S3DXAIPackage.h */,
+				720E478712513AEB00BC6A74 /* S3DXAIEngineAPI.h */,
+				720E478812513AEB00BC6A74 /* S3DXPlatform.h */,
+				720E478912513AEB00BC6A74 /* S3DXMacros.h */,
+				720E478A12513AEB00BC6A74 /* S3DXPlugin.h */,
+				720E478B12513AEB00BC6A74 /* S3DXAIVariable.h */,
+				720E478C12513AEB00BC6A74 /* S3DXConfig.h */,
+				720E478D12513AEB00BC6A74 /* S3DXAIVariables.h */,
+				720E478E12513AEB00BC6A74 /* S3DXAIConstant.h */,
+				720E478F12513AEB00BC6A74 /* S3DXAIModel.h */,
+				720E479012513AEB00BC6A74 /* S3DXAIFunction.h */,
+				720E479112513AEB00BC6A74 /* S3DXTypes.h */,
+			);
+			name = S3DX;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC09C05546B4700DB518D /* Simplex_Noise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB916008733D950010E9CD /* Build configuration list for PBXNativeTarget "Simplex_Noise" */;
+			buildPhases = (
+				D2AAC09B05546B4700DB518D /* Frameworks */,
+				D2AAC09A05546B4700DB518D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Simplex_Noise;
+			productName = libSimplex_Noise_Mac;
+			productReference = D2AAC09D05546B4700DB518D /* Simplex_Noise_Mac.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB916408733D950010E9CD /* Build configuration list for PBXProject "Simplex_Noise" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Simplex_Noise */;
+			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC09C05546B4700DB518D /* Simplex_Noise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC09A05546B4700DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800000010E9AC9E700239362 /* noise.cpp in Sources */,
+				720E47531251383000BC6A74 /* Plugin.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB916108733D950010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../../Sources/Mac/PrecompiledHeader.h;
+				OBJROOT = "../../Temp/Mac/";
+				PRODUCT_NAME = Simplex_Noise_Mac;
+				USER_HEADER_SEARCH_PATHS = ../../Sources/;
+			};
+			name = Debug;
+		};
+		1DEB916208733D950010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../../Sources/Mac/PrecompiledHeader.h;
+				OBJROOT = "../../Temp/Mac/";
+				PRODUCT_NAME = Simplex_Noise_Mac;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
+				USER_HEADER_SEARCH_PATHS = ../../Sources/;
+			};
+			name = Release;
+		};
+		1DEB916508733D950010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CONFIGURATION_BUILD_DIR = "../../Contents/Mac/";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = S3DX_DLL;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				SYMROOT = ../../Temp/Mac;
+				USER_HEADER_SEARCH_PATHS = "../../Sources/";				
+				VALID_ARCHS = "i386 ppc x86_64";
+			};
+			name = Debug;
+		};
+		1DEB916608733D950010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CONFIGURATION_BUILD_DIR = "../../Contents/Mac/";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = S3DX_DLL;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				SYMROOT = ../../Temp/Mac;
+				USER_HEADER_SEARCH_PATHS = "../../Sources/";				
+				VALID_ARCHS = "i386 ppc x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB916008733D950010E9CD /* Build configuration list for PBXNativeTarget "Simplex_Noise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB916108733D950010E9CD /* Debug */,
+				1DEB916208733D950010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB916408733D950010E9CD /* Build configuration list for PBXProject "Simplex_Noise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB916508733D950010E9CD /* Debug */,
+				1DEB916608733D950010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

@@ -1,0 +1,706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug (Phone)|ARM">
+      <Configuration>Debug (Phone)</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug (Phone)|Win32">
+      <Configuration>Debug (Phone)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release (Phone)|ARM">
+      <Configuration>Release (Phone)</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release (Phone)|Win32">
+      <Configuration>Release (Phone)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Sources\noise.cpp" />
+	<ClCompile Include="..\..\Sources\simplexnoise.cpp" />
+	<ClCompile Include="..\..\Sources\Windows\DLLMain.cpp">
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">true</ExcludedFromBuild>
+	</ClCompile>
+	<ClCompile Include="..\..\Sources\Windows\PrecompiledHeader.cpp">
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">true</ExcludedFromBuild>
+	</ClCompile>
+	<ClCompile Include="..\..\Sources\XB360\PrecompiledHeader.cpp">
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">true</ExcludedFromBuild>
+	</ClCompile>
+	<ClCompile Include="..\..\Sources\Plugin.cpp" />
+    <ClCompile Include="..\..\Sources\WinRT\PrecompiledHeader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Sources\Android\PrecompiledHeader.h" >
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">true</ExcludedFromBuild>
+	</ClInclude>
+	<ClInclude Include="..\..\Sources\BlackBerry\PrecompiledHeader.h" >
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">true</ExcludedFromBuild>
+	</ClInclude>
+	<ClInclude Include="..\..\Sources\iOS\PrecompiledHeader.h" >
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">true</ExcludedFromBuild>
+	</ClInclude>
+	<ClInclude Include="..\..\Sources\Linux\PrecompiledHeader.h" >
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">true</ExcludedFromBuild>
+	</ClInclude>
+	<ClInclude Include="..\..\Sources\Mac\PrecompiledHeader.h" >
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">true</ExcludedFromBuild>
+	</ClInclude>
+	<ClInclude Include="..\..\Sources\NaCl\PrecompiledHeader.h" >
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">true</ExcludedFromBuild>
+	</ClInclude>
+	<ClInclude Include="..\..\Sources\noise.h" />
+	<ClInclude Include="..\..\Sources\Palm\PrecompiledHeader.h" >
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">true</ExcludedFromBuild>
+	</ClInclude>
+	<ClInclude Include="..\..\Sources\PS3\PrecompiledHeader.h" >
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">true</ExcludedFromBuild>
+	</ClInclude>
+	<ClInclude Include="..\..\Sources\simplexnoise.h" />
+	<ClInclude Include="..\..\Sources\Wii\PrecompiledHeader.h" >
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">true</ExcludedFromBuild>
+	</ClInclude>
+	<ClInclude Include="..\..\Sources\Windows\PrecompiledHeader.h" >
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">true</ExcludedFromBuild>
+	</ClInclude>
+	<ClInclude Include="..\..\Sources\XB360\PrecompiledHeader.h" >
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">true</ExcludedFromBuild>
+	
+	<ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">true</ExcludedFromBuild>
+	</ClInclude>
+	<ClInclude Include="..\..\Sources\Plugin.h" />
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAIConstant.h" />
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAIEngineAPI.h" />
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAIFunction.h" />
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAIModel.h" />
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAIPackage.h" />
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAIVariable.h" />
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAIVariables.h" />
+    <ClInclude Include="..\..\Sources\S3DX\S3DXAudioBackend.h" />
+    <ClInclude Include="..\..\Sources\S3DX\S3DXConfig.h" />
+    <ClInclude Include="..\..\Sources\S3DX\S3DXMacros.h" />
+    <ClInclude Include="..\..\Sources\S3DX\S3DXPlatform.h" />
+    <ClInclude Include="..\..\Sources\S3DX\S3DXPlugin.h" />
+    <ClInclude Include="..\..\Sources\S3DX\S3DXTypes.h" />
+    <ClInclude Include="..\..\Sources\WinRT\PrecompiledHeader.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ea77f38e-552d-4a1b-ad62-5a80e949bd43}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>Simplex_Noise</ProjectName>
+    <RootNamespace>Simplex_Noise</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>..\..\Contents\WinRT\</OutDir>
+    <TargetName>$(ProjectName)_WinRT_x86_32</TargetName>
+    <IntDir>..\..\Temp\WinRT\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>..\..\Contents\WinRT\</OutDir>
+    <TargetName>$(ProjectName)_WinRT_wp8_x86_32</TargetName>
+    <IntDir>..\..\Temp\WinRT\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>..\..\Contents\WinRT\</OutDir>
+    <IntDir>..\..\Temp\WinRT\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_WinRT_x86_32</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>..\..\Contents\WinRT\</OutDir>
+    <IntDir>..\..\Temp\WinRT\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_WinRT_wp8_x86_32</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>..\..\Contents\WinRT\</OutDir>
+    <IntDir>..\..\Temp\WinRT\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_WinRT_arm_32</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>..\..\Contents\WinRT\</OutDir>
+    <IntDir>..\..\Temp\WinRT\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_WinRT_wp8_arm_32</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>..\..\Contents\WinRT\</OutDir>
+    <IntDir>..\..\Temp\WinRT\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_WinRT_arm_32</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>..\..\Contents\WinRT\</OutDir>
+    <IntDir>..\..\Temp\WinRT\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_WinRT_wp8_arm_32</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>..\..\Contents\WinRT\</OutDir>
+    <IntDir>..\..\Temp\WinRT\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_WinRT_x86_64</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>..\..\Contents\WinRT\</OutDir>
+    <IntDir>..\..\Temp\WinRT\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_WinRT_x86_64</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>PrecompiledHeader.h</PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>..\..\Sources\S3DX\;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>S3DX_DLL;__WINRT__;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>PrecompiledHeader.h</PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>..\..\Sources\S3DX\;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>S3DX_DLL;__WINRT__;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>PrecompiledHeader.h</PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>..\..\Sources\S3DX\;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>S3DX_DLL;__WINRT__;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>PrecompiledHeader.h</PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>..\..\Sources\S3DX\;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>S3DX_DLL;__WINRT__;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>PrecompiledHeader.h</PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>..\..\Sources\S3DX\;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>S3DX_DLL;__WINRT__;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Phone)|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>PrecompiledHeader.h</PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>..\..\Sources\S3DX\;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>S3DX_DLL;__WINRT__;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>PrecompiledHeader.h</PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>..\..\Sources\S3DX\;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>S3DX_DLL;__WINRT__;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (Phone)|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>PrecompiledHeader.h</PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>..\..\Sources\S3DX\;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>S3DX_DLL;__WINRT__;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>PrecompiledHeader.h</PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>..\..\Sources\S3DX\;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>S3DX_DLL;__WINRT__;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>PrecompiledHeader.h</PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>..\..\Sources\S3DX\;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>S3DX_DLL;__WINRT__;_CRT_SECURE_NO_WARNINGS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
